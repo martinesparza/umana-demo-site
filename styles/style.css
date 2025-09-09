@@ -1,63 +1,54 @@
 /* Header container */
-.site-header {
+/* .site-header {
     position: fixed;
-    /* or sticky if you prefer */
     top: 0;
     left: 0;
     width: 100%;
-    /* full-width header */
     z-index: 1000;
 
     background: rgba(255, 255, 255, 0.01);
 
-    /* the blur magic */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    /* Safari support */
 
-    /* optional: subtle border line */
     border-bottom: 10px solid rgba(255, 255, 255, 0.01);
-}
+} */
 
 /* Inner container to control width */
-.site-header .inner {
+/* .site-header .inner {
     max-width: 1100px;
-
-    /* limit content width */
     margin: 20px auto;
-    /* center horizontally */
     padding: 0 36px;
-    /* optional side padding */
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 /* Logo */
-.logo {
+/* .logo {
     font-family: 'Inter Tight', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
-}
+} */
 
 /* Navigation */
-.nav ul {
+/* .nav ul {
     list-style: none;
     display: flex;
     gap: 24px;
     margin: 0;
     padding: 0;
-}
+} */
 
-.nav a {
+/* .nav a {
     text-decoration: none;
     color: #000000;
     font-weight: 500;
-}
+} */
 
-.nav a:hover {
+/* .nav a:hover {
     color: #383838;
-}
+} */
 
 /* Container style */
 /* .container-title {
@@ -85,71 +76,58 @@
         padding: 40px 20px;
 } */
 
-.container-title h1 {
+/* .container-title h1 {
     font-size: 2.5rem;
     line-height: 1.2;
-}
+} */
 
-.container-title .content h4 {
+/* .container-title .content h4 {
     font-size: 1rem;
     line-height: 1.4;
-}
+} */
 
-.container-title .content {
+/* .container-title .content {
     text-align: center;
-    /* margin: 0 30px; */
-}
+} */
 
 
-.container-about {
+/* .container-about {
     width: 100%;
     min-height: 70vh;
     display: flex;
     justify-content: center;
-    /* centre the main content */
     align-items: center;
-    /* vertically centre (optional) */
     background: white;
-    /* border: 2px dashed red; */
-}
+} */
 
-.container-about .content {
+/* .container-about .content {
     max-width: 1200px;
     width: 100%;
     display: flex;
-    /* so inner boxes align side by side */
-    gap: 10px;
-    /* space between them */
-    padding: 60px 0;
-    flex-wrap: wrap;
-    /* border: 2px dashed blue; */
-    /* just for visualisation */
+gap: 10px;
+padding: 60px 0;
+flex-wrap: wrap;
 }
 
-.container-about .content-box {
+*/
+/* .container-about .content-box {
     flex: 1;
-    /* let them grow equally */
     padding: 16px;
     flex: 1 1 10%;
     background: #ffffff;
-    /* border: 2px dashed green; */
     margin: 0 50px;
-    /* visualisation */
-    /* box-sizing: border-box; */
     min-width: 300px;
-    /* below this, they’ll stack */
-}
-
+} */
+/* 
 .container-about p {
     font-size: 1.32rem;
     line-height: 1.6;
     color: #3f3f3f;
-}
+} */
 
 /* Section container */
-.info-base-section {
+/* .info-base-section {
     position: relative;
-    /* border: 2px dashed red; */
     text-align: center;
     background: rgba(255, 255, 255, 0);
     padding: 50px 16px;
@@ -160,35 +138,29 @@
     border-radius: 2rem;
     border: .3rem solid #616161;
     width: calc(100% - 80px);
-    /* leaves 40px on each s ide */
-}
+} */
 
-.info-base-section .bg-video {
+/* .info-base-section .bg-video {
     position: absolute;
     top: 0%;
     left: 0%;
     min-width: 100%;
     min-height: 100%;
-    /* width: auto; */
-    /* height: auto; */
     z-index: -1;
-    /* transform: translate(-50%, -50%); */
-    /* object-fit: cover; */
-}
+} */
 
-.info-section {
+/* .info-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 24px;
     max-width: 1100px;
     margin: 60px auto;
     padding: 0 20px;
-    /* border: 2px dashed blue; */
     align-items: start;
-}
+} */
 
 /* Info box styling */
-.info-box {
+/* .info-box {
     background: #9292925b;
     border-radius: 16px;
     padding: 32px 24px;
@@ -197,35 +169,32 @@
     cursor: default;
     position: relative;
     overflow: hidden;
-}
+} */
 
 /* Subtle hover effect */
-.info-box:hover {
+/* .info-box:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
-}
+} */
 
 
-.info-box p {
+/* .info-box p {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
     transition: max-height 0.5s ease, opacity 0.4s ease;
     margin: 10px 0;
-    /* prevent spacing when collapsed */
-}
+} */
 
 /* Reveal description on hover */
-.info-box:hover p {
+/* .info-box:hover p {
     max-height: 200px;
-    /* adjust depending on your text length */
     opacity: 1;
     margin-top: 12px;
-    /* add spacing when revealed */
-}
+} */
 
 /* Heading style */
-.info-box h3 {
+/* .info-box h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1px;
@@ -234,12 +203,12 @@
     background: #616161;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
 
 
 
 /* Decorative underline on hover */
-.info-box h3::after {
+/* .info-box h3::after {
     content: "";
     position: absolute;
     left: 0;
@@ -248,24 +217,24 @@
     height: 3px;
     background: linear-gradient(90deg, #fc7216, #FF9D80);
     transition: width 0.4s ease;
-}
+} */
 
 
-.info-box:hover h3::after {
+/* .info-box:hover h3::after {
     width: 100%;
-}
+} */
 
 /* Paragraph style */
-.info-box p {
+/* .info-box p {
     font-size: 1rem;
     line-height: 1.6;
     color: #333;
-}
+} */
 
 
 /* Footer */
-footer {
+/* footer {
     text-align: center;
     font-size: 0.9em;
     color: #666;
-}
+} */

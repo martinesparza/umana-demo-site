@@ -1,7 +1,7 @@
 /* Hero / Title section */
 
 .container-hero {
-    height: 95vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -17,13 +17,13 @@
     /* max-height: 100px; */
     /* border: 2px dashed blue; */
     padding: 0 10px;
-    margin: 0 10px;
+    margin: -10px 10px;
     text-align: center;
 
 }
 
 .container-hero .content-subtitle {
-    max-width: 700px;
+    max-width: 600px;
     /* border: 2px dashed red; */
     padding: 0 10px;
     margin: 0 10px;
@@ -32,37 +32,90 @@
 
 }
 
-/* .container-title {
-    width: 100%;
-    height: 95vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.container-hero .content-subtitle h4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.3;
+}
 
-    background: linear-gradient(117deg, #FFD6BA, #FF9D80);
-    padding: 0 20px;
-} */
+.hero-btn {
+    margin-top: 20px;
+    padding: 14px 32px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid transparent;
+    background: linear-gradient(100deg, #000000, #8d8c8c);
+    background-clip: padding-box;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); */
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
 
-/* .container-title .content {
-    max-width: 700px;
-    padding: 0 16px;
-} */
+.hero-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid #000000;
+    background: transparent;
+    color: #000000;
+    /* 👈 now only color changes */
+}
+
+
 
 /* Responsive adjustments */
-/* @media (max-width: 450px) {
-    .container-title {
+
+/* styles apply only if the viewport width is 480px or smaller */
+
+@media (max-width: 1000px) {
+    .container-hero {
         height: 80vh;
+        padding: 60px 20px;
     }
 
-    .container-title h1 {
-        font-size: 2.5rem;
+    .container-hero .content-title h1 {
+        font-size: 3rem;
         line-height: 1.2;
     }
 
-    .container-title .content h4 {
-        font-size: 1rem;
+    .container-hero .content-subtitle {
+        max-width: 80%;
+    }
+
+    .container-hero .content-subtitle h4 {
+        font-size: 1.5rem;
         line-height: 1.4;
     }
-} */
+
+    .hero-btn {
+        font-size: 1.1rem;
+        padding: 12px 24px;
+    }
+}
+
+
+@media (max-width: 780px) {
+    .container-hero {
+        height: 80vh;
+        padding: 60px 20px;
+    }
+
+    .container-hero .content-title h1 {
+        line-height: 1.1;
+    }
+
+    .container-hero .content-subtitle {
+        max-width: 80%;
+    }
+
+    .container-hero .content-subtitle h4 {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    .hero-btn {
+        font-size: 0.9rem;
+        padding: 8px 24px;
+    }
+}

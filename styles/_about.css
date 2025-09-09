@@ -1,0 +1,69 @@
+/* about section */
+.container-about {
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    background: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    padding: 50px 40px;
+
+    /* max-width: 1200px; */
+    /* flex-direction: row; */
+
+}
+
+.container-about .content-box {
+    flex: 1 1 1200px;
+    padding: 16px;
+    background: #ffffff;
+    /* border: 2px dashed blue; */
+    max-width: 500px;
+    /* margin: 50px 0px 0px 0px; */
+    /* padding: 50px 20px 20px 20px; */
+    /* max-height: ; */
+    /* min-height:min-content; */
+    /* 👈 each won’t grow beyond 500px */
+    /* min-width: 300px; */
+    /* 👈 but won’t shrink below this */
+}
+
+.container-about .content-box p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.35;
+}
+
+.container-about .content-box h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+
+/* Responsive adjustments */
+
+/* styles apply only if the viewport width is 480px or smaller */
+
+@media (max-width: 1000px) {
+
+
+    .container-about .content-box h2 {
+        font-size: 2.5rem;
+        line-height: 1.3;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container-about .content-box h2 {
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
+
+    .container-about .content-box p {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+}
