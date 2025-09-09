@@ -1,11 +1,3 @@
-/* Reset some defaults */
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #f9f9f9;
-    color: #000000;
-}
-
 /* Header container */
 .site-header {
     position: fixed;
@@ -29,7 +21,7 @@ body {
 
 /* Inner container to control width */
 .site-header .inner {
-    max-width: 1200px;
+    max-width: 1100px;
 
     /* limit content width */
     margin: 20px auto;
@@ -68,46 +60,46 @@ body {
 }
 
 /* Container style */
-
-
-.container-title {
+/* .container-title {
     width: 100%;
     height: 95vh;
     display: flex;
     background: linear-gradient(117deg, #FFD6BA, #FF9D80);
     justify-content: center;
-    /* horizontal centering */
     align-items: center;
-    /* vertical centering */
     flex-direction: column;
     text-align: center;
-    /* optional: center text */
     padding: 0 20px;
+} */
+
+/* .container-title .content {
+    max-width: 700px;
+    text-align: center;
+    padding: 0 16px;
+    margin-top: -20px;
+} */
+
+/* @media (max-width: 450px) {
+    .container-title {
+        height: 80vh;
+        padding: 40px 20px;
+} */
+
+.container-title h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.container-title .content h4 {
+    font-size: 1rem;
+    line-height: 1.4;
 }
 
 .container-title .content {
-    max-width: 700px;
     text-align: center;
-    /* border: 2px dashed red; */
-    padding: 0 16px;
+    /* margin: 0 30px; */
 }
 
-@media (max-width: 768px) {
-    .container-title {
-        height: auto;
-        padding: 40px 20px;
-    }
-
-    .container-title h1 {
-        font-size: 2rem;
-        line-height: 1.2;
-    }
-
-    .container-title .content h4 {
-        font-size: 1rem;
-        line-height: 1.4;
-    }
-}
 
 .container-about {
     width: 100%;
@@ -139,7 +131,7 @@ body {
     /* let them grow equally */
     padding: 16px;
     flex: 1 1 10%;
-    background: #f9f9f9;
+    background: #ffffff;
     /* border: 2px dashed green; */
     margin: 0 50px;
     /* visualisation */
@@ -269,48 +261,6 @@ body {
     line-height: 1.6;
     color: #333;
 }
-
-
-
-/* Headings */
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Inter Tight', sans-serif;
-    margin: 0 0 10px;
-    font-weight: 300;
-}
-
-h1 {
-    font-family: 'Inter', sans-serif;
-    font-size: 4.5rem;
-    line-height: 1.15;
-    font-weight: 800;
-}
-
-h2 {
-    font-size: 3.4rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-}
-
-h4 {
-    font-size: 1.6rem;
-    font-weight: 300;
-}
-
-h5 {
-    font-size: 1rem;
-}
-
-h6 {
-    font-size: 0.875rem;
-}
-
 
 
 /* Footer */
